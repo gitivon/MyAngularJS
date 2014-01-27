@@ -1,10 +1,17 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en-US" ng-app>
 <head>
     <meta charset="UTF-8">
     <title>My AngularJS</title>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
 </head>
 <body ng-controller="app">
       Hello {{name}}
+
 </body>
+<script type="text/javascript">
+    var app=function($scope){
+        $scope.name='world!';
+    }
+</script>
 </html>
